@@ -1,8 +1,7 @@
 const request = require("supertest");
 const { validate } = require("uuid");
 
-const Application = require("../app");
-const app = new Application().app;
+const app = require("../");
 
 describe("Users", () => {
   it("should be able to create a new user", async () => {
