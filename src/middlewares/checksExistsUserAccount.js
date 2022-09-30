@@ -1,7 +1,7 @@
 const { users } = require("../database");
 
 module.exports = function checksExistsUserAccount(request, response, next) {
-  const { username } = request.body;
+  const { username } = request.headers;
 
   const user = users.find(
     (user) => user.username.toUpperCase() === username.toUpperCase()

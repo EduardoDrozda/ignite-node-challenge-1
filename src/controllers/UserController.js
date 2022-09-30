@@ -7,7 +7,6 @@ class UserController {
   }
 
   async store(req, res) {
-    console.log(req.body);
     const userInvalid = await this.validateUser(req.body);
 
     if (userInvalid) {

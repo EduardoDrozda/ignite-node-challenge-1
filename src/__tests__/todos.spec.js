@@ -50,6 +50,7 @@ describe("Todos", () => {
       deadline: todoDate.toISOString(),
       done: false,
     });
+
     expect(validate(response.body.id)).toBe(true);
     expect(response.body.created_at).toBeTruthy();
   });
