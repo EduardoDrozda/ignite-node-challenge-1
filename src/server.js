@@ -1,3 +1,4 @@
-const app = require('./');
+const Application = require("./app");
 
-app.listen(3333);
+const app = new Application();
+app.startup();
